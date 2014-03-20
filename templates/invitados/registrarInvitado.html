@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Registrar Invitado</title>
+</head>
+<body>
+	<h1>Regisatrar Invitado</h1>
+	<form method="POST" enctype ="multipart/form-data">
+		{% csrf_token %}
+
+		<label>Nombre</label>
+		<input type="text" name="nombre"><br>
+		<label>Pais</label>
+		<input type="text" name="pais"><br>
+		<label>Telefono</label>
+		<input type="text" name="telefono"><br>
+			
+		<label>Foto</label>
+		<input type="file" name="foto"><br>
+
+		<input type="submit" value="Registrar">
+
+	</form>
+
+	{% if estado %}
+		<h2> Guardado exitoso </h2>
+	{% endif %}
+
+</body>
+</html>

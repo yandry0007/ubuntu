@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+		<TITLE> {% block title %} TITULO BASE {% endblock %} </TITLE>
+		{% block css %}<link rel="stylesheet" type="text/css" href="/media/css/admin.css">{% endblock %}
+</HEAD>
+<BODY>
+	<HEADER>
+		<H1>Administracion Especial</H1>	
+		<img src="/media/images/yybb.jpg"/>		
+	</HEADER>
+ 
+	
+		<SECTION>
+			{% block content %}	
+
+
+
+			{% endblock %}
+		</SECTION>
+
+</BODY>
+</HTML>
